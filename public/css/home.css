@@ -1,0 +1,221 @@
+:root{
+    /* COLORES */
+    --color-amarillo : #EAC926;
+    --color-azul : #03264C;
+    --color-celeste : #1259c3;
+    --color-grisOscuro : #666;
+    --color-grisClaro : #ebebee;
+    --color-verde: #39b54a;
+ /* FUENTES */
+    --font-roboto: 'Roboto', sans-serif;
+ /* TAMAÑOS DE FUENTES */
+     --paragraph : 12px;
+     --title : 24px;
+     --prices : 18px;
+     --discounts-descriptions : 16px; 
+}
+/*++++++++++++++++++*/
+/*ESTILOS GENERALES*/
+/*++++++++++++++++++*/
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+  font-family: var(--font-Roboto);
+}
+
+li {
+    list-style: none;
+ }
+
+ /*+++++++++++++++++++++*/
+/*FIN ESTILOS GENERALES*/
+/*++++++++++++++++++++*/
+
+/*+++++++++++++*/
+/*   HEADER   */
+/*++++++++++++*/
+header {
+   background-color: var(--color-amarillo);
+   font-size: 12px;
+   color: rgba(51,51,51.6);
+   padding-top: 40px;
+   box-sizing: border-box;
+}
+
+header .burger-menu {
+    background-color: var(--color-celeste);
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    width: 30px;
+    padding: 9px;
+    margin-top: 30px;
+    margin: 10px auto 0;
+}  
+
+header img#logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header .busqueda {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header p {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+}
+header nav ul .list {
+    display: none;
+}
+header nav ul .menu-top {
+ display: none;
+}
+/*+++++++++++++*/
+/* FIN  HEADER*/
+/*++++++++++++*/
+
+/*+++HOME+++*/
+.home.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home .section-title {
+    margin: 25px 0;
+    color: var(--gris-oscuro);
+}
+
+.home .card {
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 10px 5px 5px grey;
+
+}
+
+.home .card .card-content {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+.home .card .card-content .icon-truck {
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    width: fit-content;
+    width: -moz-fit-content; 
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+
+.home .card .card-content .icon-truck i {
+    color: var(--color-verde);
+    font-size: 16px;
+}
+
+.product-info {
+    display: flex;
+
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+
+.descripcion{
+padding-bottom: 10px;
+}
+
+.product-info p:nth-child(1){
+    flex-grow: 0.3;
+}
+
+.product-info p:nth-child(2){
+    color: var(--verde);
+    font-size: 14px;
+    flex-grow: 0.7;
+}
+
+.home .card .card-content .product-name {
+    display: none;
+    color: var(--gris-oscuro);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/*+++FIN HOME+++*/
+
+
+/*+++++++++*/
+/* FOOTER  */
+/*+++++++*/
+
+footer {
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+footer article{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+footer article p {
+    font-size: var(--paragraph);
+    width: 80%;
+    margin: 0 auto;
+}
+footer article h4 {
+    font-size: 14px;
+}
+footer article i{
+    color: var(--color-celeste);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+footer p#copyrigth {
+    font-size: var(--paragraph);
+    color: var(--color-grisOscuro);
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* Media queries*/
+
+@media (min-width: 361px) {
+    .home .banner {
+        display: block;
+    }
+    main.home {
+        display: flex;
+        width: 750px;
+    }
+.home .card{
+    margin-left: 20px;
+}
+}
